@@ -69,39 +69,34 @@
 
 </head>
 
-<body>
+<body id="report_landing_page">
     <!-- Wrapper / Start -->
     <div id="wrapper" class="bor-radius">
         <!---- TOP LINE/ Start---->
-        <div id="top-line" class="py-2 border-bottom">
-            <div class="guest" class="py-3"><strong>User: <a href='LoginRepeat.asp'>Guest</a></strong></div>
+        <div id="top-line">
+            <!--div class="guest" class="py-3"><strong>User: <a href='LoginRepeat.asp'>Guest</a></strong></div>
             <ul class="log_reg">
-                <!--<li><a href="GIA_Register_NEW.asp" ><i class="icon-user fa-lg ico" title="Register"></i><span class="mobile_text_hide"> Register</a></span></li>-->
-                <!--	<li><a href="LoginRepeat.asp" ><i class="icon-signin fa-lg ico" title="Login"></i><span class="mobile_text_hide">Login</span></a></li>-->
-                <!--	<li><a href="subscribe.asp" >Subscribe</a></li> <li><a href="Contact.asp" >Contact</a></li>-->
-                <li><a href="AddToCart.asp"><i class="icon-shopping-cart fa-lg ico" title="Shoping Cart"></i><span style="font-size:12px;">&nbsp;Shopping Cart</span></a></li>
-            </ul>
+              
+        <li><a href="AddToCart.asp"><i class="icon-shopping-cart fa-lg ico" title="Shoping Cart"></i><span style="font-size:12px;">&nbsp;Shopping Cart</span></a></li>
+        </ul--->
         </div>
         <!---- TOP LINE/ END---->
         <!--- HEADER / START --->
-        <!--- HEADER / START --->
-        <header id="header">
+        <header id="header" class="mb-3">
             <div class="container flo">
                 <!-- Header -->
                 <!-- Logo / start -->
                 <div style="margin-top:10px">
                     <div class="thirteen columns">
-                        <div class="log_img">
+                        <!--div class="log_img">
                             <a href="https://www.strategyr.com/default.asp"><img src="https://www.strategyr.com/GIA_Images/images/log_icon.png" class="log_ico"></a>
-                        </div>
-                        <div class="logo_text">
-                            <img src="https://www.strategyr.com/GIA_Images/images/gia_banner.png">
-                            <!--h4>A Worldwide Business Strategy & Market Intelligence Source</h4-->
-                            <!--h4>AI-Powered Market Intelligence Curated by Domain Experts</h4-->
-                            <!--<h4>Influencer Driven AI Powered Real-Time Market Intelligence</h4>-->
+                        </div-->
+                        <div class="logo_text w-xl-65 w-lg-65 w-sm-70 w-sm-70  mx-sm-auto ml-xl-0">
+                            <img src="../src/images/strategyr_logo.svg" class="img-fluid">
+
                         </div>
                     </div>
-                    <div class="three columns">
+                    <div class="three columns d-sm-none">
                         <img src="https://www.strategyr.com/GIA_Images/images/31years.png" class="logo2">
                     </div>
                 </div>
@@ -110,36 +105,53 @@
         </header>
         <!---HEADER / END--->
         <!----Nav / start--->
-        <div class=" border-bottom ">
-            <div id="report_page">
-                <nav id="navigation" class="style-1 ">
-                    <ul class="menu" id="responsive">
-                        <!--	<li><a href="index.html" id="current"><i class="halflings white home"></i> Home</a></li>
-		<li><a href="about.html">Company Profile</a></li>
-		<li><a href="privileged_acc.html">Privileged Access</a></li>
-		<li><a href="research.html">Our Research</a></li>	
-		<li><a href="clients.html">Clients</a></li>
-		<li><a href="why_gia.html">Why GIA</a></li>
-	   	<li><a href="subscribe.html">Subscribe</a></li>    -->
-                        <li><a href="default.asp"><i style="padding-left:10px;"></i>HOME</a></li>
-                        <li><a href="Company_Profile.asp">ABOUT US</a></li>
-                        <li><a href="Methodology.asp">MARKETGLASS</a></li>
-                        <li><a href="CX.asp">WHY</a></li>
-                        <li><a href="Panelist.asp">PANELS</a></li>
-                        <li><a href="RPIprivilegedaccess.asp">INSIDER</a></li>
-                        <li><a href="https://www.strategyr.com/Search.asp">SEARCH</a></li>
-                    </ul>
-                    <select class="selectnav" id="selectnav1">
-                        <option value="">Menu</option>
-                        <option value="https://www.strategyr.com/default.asp">HOME</option>
-                        <option value="https://www.strategyr.com/Company_Profile.asp">ABOUT US</option>
-                        <option value="https://www.strategyr.com/Methodology.asp">MARKETGLASS</option>
-                        <option value="https://www.strategyr.com/CX.asp">WHY</option>
-                        <option value="https://www.strategyr.com/Panelist.asp">PANELS</option>
-                        <option value="https://www.strategyr.com/RPIprivilegedaccess.asp">INSIDER</option>
-                        <option value="https://www.strategyr.com/Search.asp">SEARCH</option>
-                    </select>
-                </nav>
+        <div class=" border-bottom pb-0">
+            <nav id="navigation" class="style-1 py-2 ">
+                <ul class="menu" id="responsive">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">MARKETGLASS</a></li>
+                    <li><a href="#">CX</a></li>
+                    <li><a href="#">PANELS</a></li>
+                    <li class="insider_desktop"><a href="#">INSIDER</a></li>
+                    <li class="search_desktop"><a href="#">SEARCH</a></li>
+                    <li class="search_on_mobile">
+                        <a data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+                <select class="selectnav" id="selectnav1">
+                    <option value="">Menu</option>
+                    <option value="https://www.strategyr.com/default.asp">HOME</option>
+                    <option value="https://www.strategyr.com/Company_Profile.asp">Profile</option>
+                    <option value="https://www.strategyr.com/Methodology.asp">MARKETGLASS</option>
+                    <option value="https://www.strategyr.com/CX.asp">CX</option>
+                    <option value="https://www.strategyr.com/Panelist.asp">PANELS</option>
+                    <option value="https://www.strategyr.com/RPIprivilegedaccess.asp">INSIDER</option>
+                    <option value="https://www.strategyr.com/Search.asp">SEARCH</option>
+                </select>
+            </nav>
+
+            <div class="collapse" id="searchmobile">
+                <div class="card card-body">
+                    <div class="row m-0 p-1 shadow border d-flex">
+                        <input class="search-field w-100 p-3" type="text" id="tags1" x-webkit-speech="true" name="search" value="Search" placeholder="search titles" onfocus="if(this.value=='Search Titles')this.value='';" onblur="unblank(this)" onselect="Redirect();">
+
+                        <button type="submit" value="search" name="btnsubmit" class="button1 w-sm-25 w-md-15 mt-0 p-2 rounded-0" style="margin-left:10px !important;width:50px;"><small>SEARCH</small></button>
+
+                    </div>
+
+                    <div class="row m-0 p-1 shadow border d-flex mt-1">
+                        <input class="search-field w-100 p-3" type="text" id="tags1" x-webkit-speech="true" name="search" value="Insider Code" placeholder="Insider Code" onfocus="if(this.value=='Search Titles')this.value='';" onblur="unblank(this)" onselect="Redirect();">
+
+                        <button type="submit" value="search" name="btnsubmit" class="button1 w-sm-25 w-md-15 mt-0 p-2 rounded-0" style="margin-left:10px !important;width:50px;"><small>INSIDER</small></button>
+
+                    </div>
+
+
+
+
+                </div>
             </div>
         </div>
         <!--- Nav/ end--->
@@ -154,7 +166,7 @@
                         <h3 class="text-primary font-weight-bold my-1 line-height-normal">Global Market Trajectory &amp; Analytics
                     <!--MARKET ANALYSIS, TRENDS AND FORECASTS-->
                         </h3>
-                        <h3 class="text-danger font-weight-bold my-1">MCP-1534</h3> </div>
+                        <h3 class="text-dark font-weight-bold my-1">MCP-1534</h3> </div>
 
 
 
@@ -164,143 +176,65 @@
 
 
 
-                            <script>
-                                function checkEmail(str) {
-
-                                    //alert(str.length);
-                                    if (str.length > 0) {
-
-                                        var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-                                        if (!re.test(str)) {
-                                            alert("Please enter a valid Email address");
-                                            $("#txtEmail").val("");
-                                            $("#txtEmail").focus();
-                                        }
-
-                                    }
-
-                                }
-
-
-                                function checkURL(str) {
-
-                                    if (str.length > 0) {
-                                        var url = str; //$("#txtCompanyURL").val();
-                                        url_validate = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
-                                        if (!url_validate.test(url)) {
-                                            alert("Please enter a valid URL");
-                                            //$("#txtCompanyURL").val("");	
-                                            //$("#txtCompanyURL").focus();
-                                            //return false;
-                                        }
-                                    }
-
-
-                                }
-
-                                function AddToDatabase() {
-
-                                    /*alert($("#txtfirstname").val());
-                                    alert($("#txtlastname").val());
-                                    alert($("#txtCompany").val());
-                                    alert($("#txtCompanyURL").val());
-                                    alert($("#txtDesignation").val());*/
-
-
-                                    var vtxtfirstname = $("#txtfirstname").val();
-                                    var vtxtlastname = $("#txtlastname").val();
-                                    var vtxtCompany = $("#txtCompany").val();
-                                    var vtxtCompanyURL = $("#txtCompanyURL").val();
-                                    var vtxtEmail = $("#txtEmail").val();
-
-
-                                    if (vtxtfirstname != null && vtxtfirstname != '' && vtxtCompany != null && vtxtCompany != '' && vtxtCompanyURL != null && vtxtCompanyURL != '' && vtxtEmail != null && vtxtEmail != '') {
-                                        //alert(vtxtfirstname);
-                                        $.ajax({
-                                            url: "Ajax_ExpertPanelRegistry.asp",
-                                            type: "POST",
-                                            data: 'vtxtfirstname=' + encodeURIComponent(vtxtfirstname) + '&vtxtlastname=' + encodeURIComponent(vtxtlastname) + '&vtxtCompany=' + encodeURIComponent(vtxtCompany) + '&vtxtCompanyURL=' + encodeURIComponent(vtxtCompanyURL) + '&vtxtEmail=' + encodeURIComponent(vtxtEmail) + '',
-                                            success: function(data) {
-                                                alert('Thank you for registering with us. Our research team will shortly email you accessibility details.');
-                                                //  location.reload(true);
-                                                // $('#divajax').append(data);					
-                                                //  $("#lblDomain_IP"+sno).text(vDomainIP);
-                                                // $("#lblDomain"+sno).text(vDomain);
-
-                                            },
-                                            error: function(xhr, ajaxOptions, thrownError) {
-                                                alert(xhr.status);
-                                                alert(thrownError);
-                                                alert(xhr.responseText);
-                                            }
-                                        });
-
-                                    } else {
-                                        alert("Fields can`t be left blank");
-                                    }
-
-                                }
-
-                            </script>
 
 
                             <!-----------Start Enterprise Domain Expert Engagement Dashboard ------------->
 
 
 
-                            <div class="row my-4 ">
+                            <div class="row my-lg-0 my-md-0 my-xl-0">
                                 <div class="d-flex  flex-sm-column flex-md-column flex-lg-row flex-xl-row">
                                     <!--BEGIN:POLLED DATA BLOCK--->
-                                    <div class="eleven columns  w-sm-100 w-md-100 " id="report_page_executive_engagement">
+                                    <div id="report_page_executive_engagement" class="eleven columns  w-sm-100 w-md-100">
                                         <!---title--->
-                                        <div class="bg-primary mb-1 py-1 text-center">
-                                            <h3 class="text-white font-weight-bold m-0 line-height-normal">VALIDATED EXECUTIVE ENGAGEMENTS</h3> </div>
+                                        <div class=" mb-1 py-1 text-center">
+                                            <h3 class="text_orange font-weight-bold m-0 line-height-normal my-2">VALIDATED EXECUTIVE ENGAGEMENTS</h3> </div>
                                         <!---poll data--->
-                                        <div class="d-flex w-100 flex-row flex-sm-column flex-md-wrap ">
+                                        <div class="d-flex w-100 flex-row  flex-sm-wrap justify-content-around">
                                             <!--- DATA-BLOCK-1--->
-                                            <div class="w-md-50 w-100 text-center mx-auto  my-sm-3 mb-0 mb-md-3 b-tooltip ">
+                                            <div class="w-md-25 w-lg-25 w-xl-25  w-sm-40 text-center  my-sm-3 mb-0 mb-md-3 b-tooltip ">
                                                 <!---img block--->
                                                 <div class="mx-1 my-0 block w-100"> <img src="https://www.strategyr.com/chat_page_icon/doman-01.svg" class="w-25 block mx-auto"> </div>
                                                 <!---pool values-->
                                                 <div class="mx-1 my-0">
                                                     <h3 class="py-0 my-0 line-height-normal"><small>OUTREACH</small></h3> </div>
-                                                <div id="shiva"> <span class="count py-1 text-primary  text-center ">1653</span> </div>
+                                                <div id="shiva"> <span class="count py-1 text-primary  text-center ">2482</span> </div>
                                                 <div class="b-tooltip-content border shadow bg-light line-height-normal h-100 d-flex align-items-center justify-content-center">
                                                     Number of executives repeatedly engaged by snail &amp; email outreach
                                                 </div>
                                             </div>
                                             <!--- DATA-BLOCK-1--->
-                                            <div class="w-md-50 w-100 text-center mx-auto  my-sm-3 mb-0 mb-md-3 b-tooltip">
+                                            <div class="w-md-25 w-lg-25 w-xl-25 w-sm-40 text-center  my-sm-3 mb-0 mb-md-3 b-tooltip ">
                                                 <!---img block--->
                                                 <div class="mx-1 my-0 block w-100"> <img src="https://www.strategyr.com/chat_page_icon/unique-01.svg" class="w-25 block mx-auto"> </div>
                                                 <!---pool values-->
                                                 <div class="mx-1 my-0">
                                                     <h3 class="py-0 my-0 line-height-normal"><small>INTERACTIONS</small></h3> </div>
-                                                <div id="shiva"> <span class="count py-1 text-primary  text-center ">298</span> </div>
+                                                <div id="shiva"> <span class="count py-1 text-primary  text-center ">447</span> </div>
                                                 <div class="b-tooltip-content border shadow bg-light line-height-normal h-100 d-flex align-items-center text-center justify-content-center">
                                                     Interactions with Platform &amp; by Email
                                                 </div>
                                             </div>
                                             <!--- DATA-BLOCK-3--->
-                                            <div class=" w-md-50 w-100 text-center mx-auto mb-0 my-sm-3 mb-md-3 b-tooltip ">
+                                            <div class="w-md-25 w-lg-25 w-xl-25 w-sm-40 text-center  my-sm-3 mb-0 mb-md-3 b-tooltip ">
                                                 <!---img block--->
                                                 <div class="mx-1 my-0 block w-100"> <img src="https://www.strategyr.com/chat_page_icon/participation-01.svg" class="w-25 block mx-auto"> </div>
                                                 <!---pool values-->
                                                 <div class="mx-1 my-0">
                                                     <h3 class="py-0 my-0 line-height-normal"><small>PARTICIPANTS</small></h3> </div>
-                                                <div id="shiva"> <span class="count py-1 text-primary  text-center ">66</span> </div>
+                                                <div id="shiva"> <span class="count py-1 text-primary  text-center ">74</span> </div>
                                                 <div class="b-tooltip-content border shadow bg-light line-height-normal h-100 d-flex align-items-center text-center justify-content-center">
                                                     Unique # Participated
                                                 </div>
                                             </div>
                                             <!--- DATA-BLOCK-4--->
-                                            <div class="w-md-50 w-100 text-center mx-auto mb-0  my-sm-3 mb-md-3 b-tooltip ">
+                                            <div class="w-md-25vw-lg-25 w-xl-25 w-sm-40 text-center  my-sm-3 mb-0 mb-md-3 b-tooltip ">
                                                 <!---img block--->
                                                 <div class="mx-1 my-0 block w-100"> <img src="https://www.strategyr.com/chat_page_icon/validation-01.svg" class="w-25 block mx-auto"> </div>
                                                 <!---pool values-->
                                                 <div class="mx-1 my-0 ">
                                                     <h3 class="py-0 my-0 line-height-normal"><small>VALIDATIONS</small></h3> </div>
-                                                <div id="shiva"> <span class="count py-1 text-primary  text-center ">31</span> </div>
+                                                <div id="shiva"> <span class="count py-1 text-primary  text-center ">33</span> </div>
                                                 <div class="b-tooltip-content border shadow bg-light line-height-normal h-100 d-flex align-items-center text-center justify-content-center">
                                                     Responses Validated<span class="text-danger">*</span>
                                                 </div>
@@ -313,7 +247,7 @@
                                         <div class="w-100">
                                             <h5 class="font-italic px-3 text-black-50 line-height-normal"> <span class="text-danger">*</span> Login to view program details and full enterprise executive list.</h5> </div>
                                         <!--- data values--->
-                                        <div class="d-flex  border-top text-center  flex-row " id="report_info_table">
+                                        <div class="d-flex  text-center  flex-row" id="report_info_table">
                                             <!---Date-->
                                             <div class="w-md-50 w-100   mb-0 mb-md-2 mx-auto my-sm-3 ">
                                                 <h4 class="py-0 my-0 text-black-50 line-height-normal">DATE</h4>
@@ -321,19 +255,19 @@
                                             <!---TABLES-->
                                             <div class="w-md-50 w-100  mb-0 mb-md-2 my-sm-3 mx-auto">
                                                 <h4 class="py-0 my-0 text-black-50 line-height-normal"> TABLES </h4>
-                                                <h3 class="font-weight-bold py-0 my-0">132</h3> </div>
+                                                <h3 class="font-weight-bold py-0 my-0">69</h3> </div>
                                             <!---PAGES-->
                                             <div class="w-md-50 w-100  mb-0 mb-md-2 my-sm-3 mx-auto">
                                                 <h4 class="py-0 my-0 text-black-50 line-height-normal"> PAGES  </h4>
-                                                <h3 class="font-weight-bold py-0 my-0">453</h3> </div>
+                                                <h3 class="font-weight-bold py-0 my-0">218</h3> </div>
                                             <!---EDITON-->
                                             <div class="w-md-50 w-100  mb-0 mb-md-2  my-sm-3 mx-auto">
                                                 <h4 class="py-0 my-0 text-black-50 line-height-normal"> EDITION </h4>
-                                                <h3 class="font-weight-bold py-0 my-0">16</h3> </div>
+                                                <h3 class="font-weight-bold py-0 my-0">1</h3> </div>
                                             <!---PRICE-->
                                             <div class="w-md-50 w-100   mb-0 mb-md-2 my-sm-3 mx-auto">
                                                 <h4 class="py-0 my-0 text-black-50 line-height-normal">  PRICE  </h4>
-                                                <h3 class="font-weight-bold py-0 my-0">USD $5800</h3> </div>
+                                                <h3 class="font-weight-bold py-0 my-0">USD $5600</h3> </div>
                                         </div>
                                     </div>
                                     <!--END:POLLED DATA BLOCK--->
@@ -342,14 +276,12 @@
                                     <div class="five columns shadow p-2 d-flex align-items-center w-sm-100 w-md-100">
 
                                         <a href="#ex1" rel="modal:open" style="margin-top:25px;">
-                                            <img src="https://www.strategyr.com/MarketResearch/Infograhics_Images/371I1534/1534.jpg" alt="View Report Infograph" title="View Report Infograph" style="width:100%; height:auto; cursor:pointer;">
+                                            <img src="https://www.strategyr.com/MarketResearch/Infograhics_Images/860I2784/2784.jpg" alt="View Report Infograph" title="View Report Infograph" style="width:100%; height:auto; cursor:pointer;">
                                         </a>
 
                                     </div>
                                     <!--END:POLLED DATA BLOCK--->
                                     <!---INFOGRAPHIC MODEL---->
-
-
                                 </div>
                             </div>
                             <hr>
@@ -962,19 +894,19 @@ $(document).ready(function(){
         <!---Content /end--->
 
         <!---Footer / Start--->
-        <footer id="footer" class="bg-white border-top">
+        <footer id="footer " class="bg-white border-top ">
             <!-- 960 Container -->
-            <div class="container mt-3">
+            <div class="container mt-3 ">
 
                 <!-- Contact Details -->
-                <div class="four columns">
-                    <ul class="w-100  d-flex justify-content-center social-icons Social_icons">
-                        <!--<li ><a href="https://medium.com/@strategyr" target="new"><img src="\images\social\medium.jpg" style="width:24px;height:auto;" title="Medium"/></a></li>-->
+                <div class="four columns ">
+                    <ul class="w-100 d-flex justify-content-center social-icons Social_icons m-0 py-1">
+                        <!--<li ><a href="https://medium.com/@strategyr " target="new "><img src="\images\social\medium.jpg " style="width:24px;height:auto; " title="Medium "/></a></li>-->
                         <li>
-                            <a href="https://www.linkedin.com/company/global-industry-analysts-inc./?trk=tyah" target="new"><img src="https://www.strategyr.com/GIA_Images/images/social/linkedin.jpg" style="width:24px;height:auto;" title="Linkedin"></a>
+                            <a href="https://www.linkedin.com/company/global-industry-analysts-inc./?trk=tyah " target="new "><img src="https://www.strategyr.com/GIA_Images/images/social/linkedin.jpg " style="width:24px;height:auto; " title="Linkedin "></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/MarketBytes" target="new"><img src="https://www.strategyr.com/GIA_Images/images/social/twitter.jpg" style="width:24px;height:auto;" title="Twitter"></a>
+                            <a href="https://twitter.com/MarketBytes " target="new "><img src="https://www.strategyr.com/GIA_Images/images/social/twitter.jpg " style="width:24px;height:auto; " title="Twitter "></a>
                         </li>
 
 
@@ -986,25 +918,24 @@ $(document).ready(function(){
 
                 </div>
 
-                <div class="seven columns">
-                    <div class="footer_nav">
-                        <ul class="d-flex justify-content-center flex-wrap contact-details-alt">
-
-                            <li><a href="javascript:OpenWin(1)"> Disclaimer</a></li>
-                            <li><span style="color:black">|</span></li>
-                            <li><a href="javascript:OpenWin(2)"> Privacy Policy</a></li>
-                            <li><span style="color:black">|</span></li>
-                            <li><a href="contact.asp"> Contact Us</a></li>
-                            <li><span style="color:black">|</span></li>
-                            <li><a href="feedback.asp"> Feedback</a></li>
-                            <li><span style="color:black">|</span></li>
-                            <li><a href="Copycats.asp"> Buyer Alert</a></li>
+                <div class="seven columns ">
+                    <div class="footer_nav ">
+                        <ul class="d-flex justify-content-center flex-wrap contact-details-alt ">
+                            <li><a href="javascript:OpenWin(1) "> Disclaimer</a></li>
+                            <li><span style="color:black ">|</span></li>
+                            <li><a href="javascript:OpenWin(2) "> Privacy Policy</a></li>
+                            <li><span style="color:black ">|</span></li>
+                            <li><a href="contact.asp "> Contact Us</a></li>
+                            <li><span style="color:black ">|</span></li>
+                            <li><a href="feedback.asp "> Feedback</a></li>
+                            <li><span style="color:black ">|</span></li>
+                            <li><a href="Copycats.asp "> Buyer Alert</a></li>
                             <!--    <li>|</li>
-                <li><a href="careers.asp"> Careers</a></li>
+                <li><a href="careers.asp "> Careers</a></li>
 				 <li>|</li>
-               <li><a href="clientlist.asp"> Clients</a></li>
+               <li><a href="clientlist.asp "> Clients</a></li>
 				 <li>|</li>
-                <li><a href="blog/blog.asp"> Blog</a></li>-->
+                <li><a href="blog/blog.asp "> Blog</a></li>-->
                             <!--<li>|</li>
 				 <li><script src='//platform.linkedin.com/in.js' type='text/javascript'>  lang: en_US </script><script type='IN/Share' data-url='https://www.StrategyR.com'></script></li>-->
 
@@ -1013,12 +944,12 @@ $(document).ready(function(){
                     </div>
                 </div>
                 <!-- Twitter -->
-                <div class="five columns text-center pt-1">
+                <div class="five columns text-center pt-1 ">
 
                     <div>
 
-                        <span style="color:black !important; "><strong>General queries:</strong> Info411@StrategyR.com</span>
-                        <div class="clearfix"></div>
+                        <span style="color:black !important; font-size: 11px ">General queries:</strong> Info411@StrategyR.com
+                      
                     </div>
 
                 </div>
@@ -1029,14 +960,14 @@ $(document).ready(function(){
 
         <footer id="footer-bottom ">
 
-            <div id="wrapper" class="bg-dark py-2">
+            <div id="wrapper " class="border-top py-2 ">
                 <!-- 960 Container -->
                 <div class="container ">
 
                     <!-- Copyrights -->
                     <div class="sixteen columns ">
-                        <div class="copyright text-center  text-white">
-                            © Global Industry Analysts, Inc., USA. All Rights Reserved.
+                        <div class="copyright text-center text-dark">
+                            <small> © Global Industry Analysts, Inc., USA. All Rights Reserved.</small>
                         </div>
                     </div>
 
@@ -1056,12 +987,13 @@ $(document).ready(function(){
     <!-- Wrapper / Start -->
 </body>
 <!----scripts---->
-<script src="../src/scripts/jquery.min.js"></script>
-<script src="../src/scripts/jquery.flexslider.js"></script>
-<script src="../src/scripts/jquery.selectnav.js"></script>
-<script src="../src/scripts/jquery.modernizr.js"></script>
-<script src="../src/scripts/custom.js"></script>
-<script src="../src/js/respond.js"></script>
-<script src="../src/js/respond.proxy.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js "></script>
+<script src="../src/scripts/jquery.flexslider.js "></script>
+<script src="../src/scripts/jquery.selectnav.js "></script>
+<script src="../src/scripts/jquery.modernizr.js "></script>
+<script src="../src/scripts/custom.js "></script>
+<script src="../src/js/respond.js "></script>
+<script src="../src/js/respond.proxy.js "></script>
+<script src="../src/scripts/bootstrap.bundle.js "></script>
 
 </html>

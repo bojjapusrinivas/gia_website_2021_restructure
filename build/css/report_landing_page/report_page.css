@@ -122,6 +122,14 @@
     }
 }
 @media only screen and (max-width:992px) {
+    #report_page_title h2 {
+        font-size: 14px !important;
+        line-height: normal;
+    }
+    #report_page_title h3 {
+        font-size: 13px !important;
+        line-height: normal;
+    }
     #report_page .selectnav {
         display: none !important;
     }

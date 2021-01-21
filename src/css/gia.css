@@ -915,16 +915,20 @@
 			FOOTER Nav
 =================================*/
     
+    #footer {
+        font-size: 11px !important
+    }
     .footer_nav {
         margin-top: 5px;
     }
     .contact-details-alt li {
-        padding: 5px 2px;
+        padding: 2px 2px !important;
+        margin-bottom: 4px !important;
     }
     .contact-details-alt li > a {
         color: #000 !important;
-        /*color:#CCC !important;*/
         text-align: center;
+        font-size: 11px;
     }
     .contact-details-alt li > a:hover {
         color: #169FE6 !important;
@@ -2038,7 +2042,7 @@
     display: block;
 }
 .logo2 {
-    width: 100px;
+    width: 85px;
     display: block;
     float: right;
 }

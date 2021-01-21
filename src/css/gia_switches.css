@@ -4919,6 +4919,12 @@ button.bg-secondary:hover,
 button.bg-secondary:focus {
     background-color: #545b62 !important;
 }
+.text_orange {
+    color: #fd7e14;
+}
+.bg_orange {
+    background: #fd7e14;
+}
 
 /*==== BORDER ====*/
 

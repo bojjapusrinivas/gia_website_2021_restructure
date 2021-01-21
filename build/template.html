@@ -66,35 +66,32 @@
 <body>
     <!-- Wrapper / Start -->
     <div id="wrapper" class="bor-radius">
+
         <!---- TOP LINE/ Start---->
-        <div id="top-line" class="py-2 border-bottom">
-            <div class="guest" class="py-3"><strong>User: <a href='LoginRepeat.asp'>Guest</a></strong></div>
+        <div id="top-line">
+            <!--div class="guest" class="py-3"><strong>User: <a href='LoginRepeat.asp'>Guest</a></strong></div>
             <ul class="log_reg">
-                <!--<li><a href="GIA_Register_NEW.asp" ><i class="icon-user fa-lg ico" title="Register"></i><span class="mobile_text_hide"> Register</a></span></li>-->
-                <!--	<li><a href="LoginRepeat.asp" ><i class="icon-signin fa-lg ico" title="Login"></i><span class="mobile_text_hide">Login</span></a></li>-->
-                <!--	<li><a href="subscribe.asp" >Subscribe</a></li> <li><a href="Contact.asp" >Contact</a></li>-->
-                <li><a href="AddToCart.asp"><i class="icon-shopping-cart fa-lg ico" title="Shoping Cart"></i><span style="font-size:12px;">&nbsp;Shopping Cart</span></a></li>
-            </ul>
+              
+        <li><a href="AddToCart.asp"><i class="icon-shopping-cart fa-lg ico" title="Shoping Cart"></i><span style="font-size:12px;">&nbsp;Shopping Cart</span></a></li>
+        </ul--->
         </div>
         <!---- TOP LINE/ END---->
         <!--- HEADER / START --->
-        <header id="header">
+        <header id="header" class="mb-3">
             <div class="container flo">
                 <!-- Header -->
                 <!-- Logo / start -->
                 <div style="margin-top:10px">
                     <div class="thirteen columns">
-                        <div class="log_img">
+                        <!--div class="log_img">
                             <a href="https://www.strategyr.com/default.asp"><img src="https://www.strategyr.com/GIA_Images/images/log_icon.png" class="log_ico"></a>
-                        </div>
-                        <div class="logo_text">
-                            <img src="https://www.strategyr.com/GIA_Images/images/gia_banner.png">
-                            <!--h4>A Worldwide Business Strategy & Market Intelligence Source</h4-->
-                            <!--h4>AI-Powered Market Intelligence Curated by Domain Experts</h4-->
-                            <!--<h4>Influencer Driven AI Powered Real-Time Market Intelligence</h4>-->
+                        </div-->
+                        <div class="logo_text w-xl-65 w-lg-65 w-sm-70 w-sm-70  mx-sm-auto ml-xl-0">
+                            <img src="../src/images/strategyr_logo.svg" class="img-fluid">
+
                         </div>
                     </div>
-                    <div class="three columns">
+                    <div class="three columns d-sm-none">
                         <img src="https://www.strategyr.com/GIA_Images/images/31years.png" class="logo2">
                     </div>
                 </div>
@@ -106,22 +103,15 @@
         <div class=" border-bottom pb-3">
             <nav id="navigation" class="style-1 ">
                 <ul class="menu" id="responsive">
-                    <!--	<li><a href="index.html" id="current"><i class="halflings white home"></i> Home</a></li>
-		<li><a href="about.html">Company Profile</a></li>
-		<li><a href="privileged_acc.html">Privileged Access</a></li>
-		<li><a href="research.html">Our Research</a></li>	
-		<li><a href="clients.html">Clients</a></li>
-		<li><a href="why_gia.html">Why GIA</a></li>
-	   	<li><a href="subscribe.html">Subscribe</a></li>    -->
-                    <li><a href="default.asp"><i style="padding-left:10px;"></i>HOME</a></li>
-                    <li><a href="Company_Profile.asp">Profile</a></li>
-                    <li><a href="Methodology.asp">MARKETGLASS</a></li>
-                    <li><a href="CX.asp">CX</a></li>
-                    <li><a href="Panelist.asp">PANELS</a></li>
-                    <li class="insider_desktop"><a href="RPIprivilegedaccess.asp">INSIDER</a></li>
-                    <li class="search_desktop"><a href="https://www.strategyr.com/Search.asp">SEARCH</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">MARKETGLASS</a></li>
+                    <li><a href="#">CX</a></li>
+                    <li><a href="#">PANELS</a></li>
+                    <li class="insider_desktop"><a href="#">INSIDER</a></li>
+                    <li class="search_desktop"><a href="#">SEARCH</a></li>
                     <li class="search_on_mobile">
-                        <a data-toggle="collapse" href="#searchmobile" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-search" aria-hidden="true"></i>
+                        <a data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-search" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -140,16 +130,16 @@
             <div class="collapse" id="searchmobile">
                 <div class="card card-body">
                     <div class="row m-0 p-1 shadow border d-flex">
-                        <input class="search-field w-100 p-3" type="text" id="tags1" x-webkit-speech="true" name="search" value="Search Titles" placeholder="search titles" onfocus="if(this.value=='Search Titles')this.value='';" onblur="unblank(this)" onselect="Redirect();">
+                        <input class="search-field w-100 p-3" type="text" id="tags1" x-webkit-speech="true" name="search" value="Search" placeholder="search titles" onfocus="if(this.value=='Search Titles')this.value='';" onblur="unblank(this)" onselect="Redirect();">
 
-                        <button type="submit" value="search" name="btnsubmit" class="button1 w-20 mt-0 p-2" style="margin-left:10px !important;width:50px;"><small>Search</small></button>
+                        <button type="submit" value="search" name="btnsubmit" class="button1 w-sm-25 w-md-15 mt-0 p-2 rounded-0" style="margin-left:10px !important;width:50px;"><small>SEARCH</small></button>
 
                     </div>
 
                     <div class="row m-0 p-1 shadow border d-flex mt-1">
                         <input class="search-field w-100 p-3" type="text" id="tags1" x-webkit-speech="true" name="search" value="Insider Code" placeholder="Insider Code" onfocus="if(this.value=='Search Titles')this.value='';" onblur="unblank(this)" onselect="Redirect();">
 
-                        <button type="submit" value="search" name="btnsubmit" class="button1 w-20 mt-0 p-2" style="margin-left:10px !important;width:50px;"><small>Go</small></button>
+                        <button type="submit" value="search" name="btnsubmit" class="button1 w-sm-25 w-md-15 mt-0 p-2 rounded-0" style="margin-left:10px !important;width:50px;"><small>INSIDER</small></button>
 
                     </div>
 
@@ -184,7 +174,7 @@
 
                 <!-- Contact Details -->
                 <div class="four columns ">
-                    <ul class="w-100 d-flex justify-content-center social-icons Social_icons ">
+                    <ul class="w-100 d-flex justify-content-center social-icons Social_icons m-0 py-1">
                         <!--<li ><a href="https://medium.com/@strategyr " target="new "><img src="\images\social\medium.jpg " style="width:24px;height:auto; " title="Medium "/></a></li>-->
                         <li>
                             <a href="https://www.linkedin.com/company/global-industry-analysts-inc./?trk=tyah " target="new "><img src="https://www.strategyr.com/GIA_Images/images/social/linkedin.jpg " style="width:24px;height:auto; " title="Linkedin "></a>
@@ -205,7 +195,6 @@
                 <div class="seven columns ">
                     <div class="footer_nav ">
                         <ul class="d-flex justify-content-center flex-wrap contact-details-alt ">
-
                             <li><a href="javascript:OpenWin(1) "> Disclaimer</a></li>
                             <li><span style="color:black ">|</span></li>
                             <li><a href="javascript:OpenWin(2) "> Privacy Policy</a></li>
@@ -233,8 +222,8 @@
 
                     <div>
 
-                        <span style="color:black !important; "><strong>General queries:</strong> Info411@StrategyR.com</span>
-                        <div class="clearfix "></div>
+                        <span style="color:black !important; font-size: 11px ">General queries:</strong> Info411@StrategyR.com
+                      
                     </div>
 
                 </div>
@@ -245,14 +234,14 @@
 
         <footer id="footer-bottom ">
 
-            <div id="wrapper " class="bg-dark py-2 ">
+            <div id="wrapper " class="border-top py-2 ">
                 <!-- 960 Container -->
                 <div class="container ">
 
                     <!-- Copyrights -->
                     <div class="sixteen columns ">
-                        <div class="copyright text-center text-white ">
-                            © Global Industry Analysts, Inc., USA. All Rights Reserved.
+                        <div class="copyright text-center text-dark">
+                            <small> © Global Industry Analysts, Inc., USA. All Rights Reserved.</small>
                         </div>
                     </div>
 
@@ -265,9 +254,6 @@
 
         <!---Footer / end --->
 
-
-
-
     </div>
     <!-- Wrapper / Start -->
 </body>
@@ -279,7 +265,6 @@
 <script src="../src/scripts/custom.js "></script>
 <script src="../src/js/respond.js "></script>
 <script src="../src/js/respond.proxy.js "></script>
-
 <script src="../src/scripts/bootstrap.bundle.js "></script>
 
 </html>
