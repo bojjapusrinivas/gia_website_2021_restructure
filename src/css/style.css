@@ -3939,6 +3939,15 @@ table.standard-table.shop td {
     #navigation {
         width: 714px;
         background: none;
+        display: flex;
+        justify-content: center;
+    }
+    .menu li.search_on_mobile {
+        display: block;
+    }
+    .menu li.search_desktop,
+    .menu li.insider_desktop {
+        display: none;
     }
     #responsive {
         display: flex !important;
