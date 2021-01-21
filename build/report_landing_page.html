@@ -1000,6 +1000,125 @@ $(document).ready(function(){
 
 
 <!---Report Landing Page Script ----->
+  <script>
+            //----ACCORDION----//
+            var acc = $(".released_abstract .accordion_rel");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel2 = this.nextElementSibling;
+                    if (panel2.style.maxHeight) {
+                        panel2.style.maxHeight = null;
+                    } else {
+                        panel2.style.maxHeight = panel2.scrollHeight + "px";
+                    }
+                });
+            }
+
+
+            //----ACCORDION----//
+            var acc = document.getElementsByClassName("accordion_key");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel3 = this.nextElementSibling;
+                    if (panel3.style.maxHeight) {
+                        panel3.style.maxHeight = null;
+                    } else {
+                        panel3.style.maxHeight = panel3.scrollHeight + "px";
+                    }
+                });
+            }
+			
+			   //----ACCORDION 01- ---//
+
+            var acc = $(".released_abstract .accordion_2 .accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+
+            //-----NUMBER COUNT----//
+            $('.count').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 15000,
+                    easing: 'linear',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+            //---COLLAPSE DIRACTION--//
+            $("#myCollapsible").collapse({
+                toggle: true,
+                direction: "up"
+            });
+
+            //---pageloadpop---//
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.pageload_popup').addClass('pop_active');
+                    // $("body").addClass('page_block');
+                } else {
+                    $('.pageload_popup').removeClass('pop_active');
+                    //$("body").removeClass('page_block');
+                }
+            });
+
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                var ivalue = 767;
+                var screenwidth = window.innerWidth;
+                if (ivalue >= screenwidth) {
+                    $('.players_tab li:nth-child(1)').removeClass('active');
+                    document.getElementById("tab1").style.display = "none";
+                    $('.tabs-container .tab-content ').removeClass("tab-content");
+                    document.getElementById("tab1").style.display = "block";
+                    document.getElementById("tab2").style.display = "block";
+                    document.getElementById("tab3").style.display = "block";
+                    document.getElementById("tab4").style.display = "block";
+
+
+                } else {
+                    $('.players_tab li:nth-child(1)').addClass('active');
+                    // document.getElementById("tab1").style.display = "block";
+                }
+
+            })
+
+        </script>
+
+        <script>
+            //----TAB ACCORDION----//
+            var acc = document.getElementsByClassName("tab_accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel4 = this.nextElementSibling;
+                    if (panel4.style.maxHeight) {
+                        panel4.style.maxHeight = null;
+                    } else {
+                        panel4.style.maxHeight = panel4.scrollHeight + "px";
+                    }
+                });
+            }
+
+        </script>
 
  
 
