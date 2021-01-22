@@ -4920,10 +4920,10 @@ button.bg-secondary:focus {
     background-color: #545b62 !important;
 }
 .text_orange {
-    color: #fd7e14;
+    color: #e37038 !important;
 }
 .bg_orange {
-    background: #fd7e14;
+    background: #e37038 !important;
 }
 
 /*==== BORDER ====*/
