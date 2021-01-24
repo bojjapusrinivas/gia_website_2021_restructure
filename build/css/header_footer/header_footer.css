@@ -6,7 +6,8 @@
 /*======= HEADER========*/
 
 header#header {
-    height: auto margin-bottom: 25px;
+    height: auto;
+    margin-bottom: 5px;
 }
 #top-line {
     box-shadow: none !important;

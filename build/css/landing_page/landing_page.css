@@ -2,6 +2,50 @@
  GIA REPORT PAGE STYLING
 ========================*/
 
+#landing_page .logo_text img {
+    width: 250px;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 5px;
+}
+@media only screen and (max-width:959px) and (min-width:768px) {
+    #landing_page .logo_text img {
+        width: 225px;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width:767px) and (min-width:480px) {
+    #landing_page .logo_text img {
+        width: 200px;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width:479px) and (min-width:300px) {
+    #landing_page .logo_text img {
+        width: 180px;
+        margin-bottom: 5px;
+    }
+}
+
+/*===============================
+        LANDING PAGE LABLE
+==============================*/
+
+#landing_page #label_container .label_container,
+#landing_page #label_container .label_bottom_block {
+    width: 380px;
+    margin: 0 auto;
+}
+@media only screen and (max-width:767px) and (min-width:480px) {
+    #landing_page #label_container .label_container,
+    #landing_page #label_container .label_bottom_block {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+#label_container .top_block {
+    display: block !important;
+}
 
 /*---------------------
  DATA POOL NUMBER COUNT
@@ -38,13 +82,15 @@
 /*---REPORT TOP BUTTON---*/
 
 .btn_type_01 {
-    background: #e6e6e6;
+    border: none;
+    background: #e0e0e0;
     font-size: 14px;
     font-weight: 600;
     color: #000;
     margin: 2px
 }
 .btn_type_02 {
+    border: none;
     background: #255E91;
     font-size: 14px;
     font-weight: 600;
@@ -55,7 +101,6 @@
 .btn_type_02:hover {
     background: #074073;
     color: #fff;
-    margin: 3px;
 }
 @media only screen and (max-width:959px) and (min-width:768px) {
     .btn_type_01 {
@@ -89,7 +134,7 @@
         background: none;
         color: #169FE6;
         box-shadow: none !important;
-        font-size: 11px;
+        font-size: 10px;
         padding: 0px 5px 0px 0px !important;
         font-weight: bold;
         border-right: rgba(0, 0, 0, 0.2) solid 1px;
@@ -572,6 +617,12 @@ ABSTRACT ACCORDION-2
     text-transform: uppercase;
     font-weight: bold;
 }
+@media only screen and (max-width: 767px) and (min-width: 300px) {
+    .accordion_new .accordion_key {
+        font-size: 12px;
+        font-weight: 500 !important;
+    }
+}
 .accordion_new .active,
 .accordion_new .accordion_key:hover {
     background-color: #eee;
@@ -712,4 +763,80 @@ ABSTRACT ACCORDION-2
     /* .players_tab_content .tab-content:nth-child(1) {
         display: none !important;
     }*/
+}
+
+/*===================================================
+    COMPANY LANDING PAGE.
+==================================================*/
+#compan_landing_page #title_block {
+    background: #e8e8e8
+}
+#compan_landing_page #title_block h3 {
+    font-size: 20px;
+}
+#compan_landing_page #label_container h3 {
+    font-size: 20px;
+}
+#compan_landing_page #label_container .img-block {
+    width: 80px !important;
+}
+#compan_landing_page #label_container .label_aside {
+    margin-left: 20px;
+}
+#compan_landing_page #label_container h4 {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0px !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+}
+@media only screen and (max-width:479px) and (min-width:320px) {
+    #compan_landing_page #title_block h3 {
+        font-size: 15px;
+    }
+    #compan_landing_page #label_container h3 {
+        font-size: 15px;
+    }
+    #compan_landing_page #label_container h4 {
+        font-size: 11px;
+    }
+}
+#compan_landing_page #label_container .label_container,
+#landing_page #label_container .label_bottom_block {
+    width: 400px;
+    margin: 0 auto;
+}
+#compan_landing_page #scrolling_dashboard h3 {
+    font-size: 15px !important;
+}
+#compan_landing_page #scrolling_dashboard #shiva .count {
+    font-size: 23px !important;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 5px !important;
+    padding-top: 5px !important;
+    border-top: rgba(0, 0, 0, 0.2) solid 1px;
+    display: block
+}
+@media only screen and (max-width:959px) and (min-width:768px) {
+    #compan_landing_page #scrolling_dashboard h3 {
+        font-size: 15px !important;
+    }
+    #compan_landing_page #scrolling_dashboard #shiva .count {
+        font-size: 23px !important;
+    }
+}
+@media only screen and (max-width:479px) and (min-width:320px) {
+    #compan_landing_page #scrolling_dashboard h3 {
+        font-size: 12px !important;
+    }
+    #compan_landing_page #scrolling_dashboard #shiva .count {
+        font-size: 16px !important;
+    }
+    #compan_landing_page .btn_type_01 {
+        font-size: 11px;
+        padding: 0px 5px 0px 0px !important;
+        font-weight: bold;
+        border-right: rgba(0, 0, 0, 0.2) solid 1px;
+    }
 }
